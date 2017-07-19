@@ -1,0 +1,15 @@
+PODS:
+  - SMTableView (2.3.8):
+    - UITableView+FDTemplateLayoutCell (~> 1.3)
+  - UITableView+FDTemplateLayoutCell (1.6)
+
+DEPENDENCIES:
+  - SMTableView
+
+SPEC CHECKSUMS:
+  SMTableView: 9c479efbadc79ccc11c327458214029bc2b45b57
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+
+PODFILE CHECKSUM: bdfe7c6eb6e9d17b0e02b91c02e20d6f1332c76c
+
+COCOAPODS: 1.2.0.beta.3

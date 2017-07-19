@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rff-Rc-NLO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-vp-yjd">
+                    <rect key="frame" x="10" y="10" width="355" height="44"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSA-t7-YWx">
+                    <rect key="frame" x="81.5" y="73" width="92" height="30"/>
+                    <state key="normal" title="添加微信好友"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrA-Dx-DXC">
+                    <rect key="frame" x="201.5" y="73" width="92" height="30"/>
+                    <state key="normal" title="添加QQ好友"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JDl-vp-yjd" firstAttribute="centerX" secondItem="Rff-Rc-NLO" secondAttribute="centerX" id="2ED-QR-KJH"/>
+                <constraint firstItem="dSA-t7-YWx" firstAttribute="centerY" secondItem="Rff-Rc-NLO" secondAttribute="centerY" constant="20" id="5yq-uv-u12"/>
+                <constraint firstItem="dSA-t7-YWx" firstAttribute="centerX" secondItem="Rff-Rc-NLO" secondAttribute="centerX" constant="-60" id="CtD-HW-mIp"/>
+                <constraint firstItem="FrA-Dx-DXC" firstAttribute="centerX" secondItem="Rff-Rc-NLO" secondAttribute="centerX" constant="60" id="crC-vf-8gQ"/>
+                <constraint firstItem="JDl-vp-yjd" firstAttribute="leading" secondItem="Rff-Rc-NLO" secondAttribute="leading" constant="10" id="eEe-Ic-zcC"/>
+                <constraint firstItem="JDl-vp-yjd" firstAttribute="top" secondItem="Rff-Rc-NLO" secondAttribute="top" constant="10" id="pv3-aW-aak"/>
+                <constraint firstItem="FrA-Dx-DXC" firstAttribute="centerY" secondItem="dSA-t7-YWx" secondAttribute="centerY" id="sCc-Ml-qd7"/>
+                <constraint firstItem="FrA-Dx-DXC" firstAttribute="width" secondItem="dSA-t7-YWx" secondAttribute="width" id="v7o-nO-HCe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="14.5" y="178"/>
+        </view>
+    </objects>
+</document>

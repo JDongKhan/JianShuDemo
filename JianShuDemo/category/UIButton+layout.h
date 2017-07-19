@@ -1,0 +1,25 @@
+//
+//  UIButton+layout.h
+//  JianShuDemo
+//
+//  Created by 王金东 on 2017/7/19.
+//  Copyright © 2017年 王金东. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSUInteger, ButtonLayoutStyle) {
+    ButtonLayoutDefault, // image在左，label在右
+    ButtonLayoutImageTop, // image在上，label在下
+    ButtonLayoutImageBottom, // image在下，label在上
+    ButtonLayoutImageRight // image在右，label在左
+};
+
+
+@interface UIButton (layout)
+
+@property (nonatomic,assign) ButtonLayoutStyle layoutStyle;
+
+- (void)layoutStyle:(ButtonLayoutStyle)style space:(CGFloat)space;
+
+@end
