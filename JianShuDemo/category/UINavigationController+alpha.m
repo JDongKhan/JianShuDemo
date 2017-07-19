@@ -64,7 +64,8 @@
 
 
 
-#pragma mark --------------------- UINavigationController Delegate---------------------
+#pragma mark ---------------------navigation delegate ---------------------
+//你再navigation的delegate的相应方法调用即可
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     UIViewController *topVC = self.topViewController;
     if (topVC != nil) {
@@ -78,19 +79,19 @@
 }
 
 - (void)dealInteractionChanges:(id<UIViewControllerTransitionCoordinatorContext>)context {
-    if ([context isCancelled]) {// 自动取消了返回手势
+    if ([context isCancelled]) {
+        // 取消
         NSTimeInterval cancelDuration = [context transitionDuration] * (double)[context percentComplete];
         [UIView animateWithDuration:cancelDuration animations:^{
             CGFloat nowAlpha = [context viewControllerForKey:UITransitionContextFromViewControllerKey].navigationBarAlpha;
-            NSLog(@"自动取消返回到alpha：%f", nowAlpha);
             [self setNavigationViewBackground:nowAlpha];
         }];
-    } else {// 自动完成了返回手势
+    } else {
+        //完成
         NSTimeInterval finishDuration = [context transitionDuration] * (double)(1 - [context percentComplete]);
         [UIView animateWithDuration:finishDuration animations:^{
             CGFloat nowAlpha = [context viewControllerForKey:
                                  UITransitionContextToViewControllerKey].navigationBarAlpha;
-            NSLog(@"自动完成返回到alpha：%f", nowAlpha);
             [self setNavigationViewBackground:nowAlpha];
         }];
     }
@@ -99,18 +100,15 @@
 
 #pragma mark - UINavigationBar Delegate
 - (void)navigationBar:(UINavigationBar *)navigationBar didPopItem:(UINavigationItem *)item {
-    if (self.viewControllers.count >= navigationBar.items.count) {// 点击返回按钮
+    if (self.viewControllers.count >= navigationBar.items.count) {
         UIViewController *popToVC = self.viewControllers[self.viewControllers.count - 1];
         [self setNavigationViewBackground:popToVC.navigationBarAlpha];
-        //[self popViewControllerAnimated:YES];
     }
 }
 
 - (void)navigationBar:(UINavigationBar *)navigationBar didPushItem:(UINavigationItem *)item {
-    // push到一个新界面
     [self setNavigationViewBackground:self.topViewController.navigationBarAlpha];
 }
-
 
 
 @end
