@@ -2,8 +2,8 @@
 //  UIButton+layout.m
 //  JianShuDemo
 //
-//  Created by 王金东 on 2017/7/19.
-//  Copyright © 2017年 王金东. All rights reserved.
+//  Created by 王金东 on 2016/7/19.
+//  Copyright © 2016年 王金东. All rights reserved.
 //
 
 #import "UIButton+layout.h"
