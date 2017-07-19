@@ -29,7 +29,7 @@
 		4DB23EF71F1E04FF00FA6BB6 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23EF51F1E04FF00FA6BB6 /* SecondTableViewCell.m */; };
 		4DB23EF81F1E04FF00FA6BB6 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB23EF61F1E04FF00FA6BB6 /* SecondTableViewCell.xib */; };
 		4DB23EFA1F1E057C00FA6BB6 /* second.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB23EF91F1E057C00FA6BB6 /* second.json */; };
-		4DB23F041F1E17B700FA6BB6 /* UINavigationController+alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23F031F1E17B700FA6BB6 /* UINavigationController+alpha.m */; };
+		4DB23F041F1E17B700FA6BB6 /* UIViewController+alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23F031F1E17B700FA6BB6 /* UIViewController+alpha.m */; };
 		4DB23F071F1E1BF700FA6BB6 /* FifthAndFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23F061F1E1BF700FA6BB6 /* FifthAndFirstViewController.m */; };
 		4DB23F301F1F35C200FA6BB6 /* MessageHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB23F2F1F1F35C200FA6BB6 /* MessageHeadView.xib */; };
 		4DB23F331F1F376700FA6BB6 /* UIButton+layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB23F321F1F376700FA6BB6 /* UIButton+layout.m */; };
@@ -70,8 +70,8 @@
 		4DB23EF51F1E04FF00FA6BB6 /* SecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
 		4DB23EF61F1E04FF00FA6BB6 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		4DB23EF91F1E057C00FA6BB6 /* second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = second.json; sourceTree = "<group>"; };
-		4DB23F021F1E17B700FA6BB6 /* UINavigationController+alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+alpha.h"; sourceTree = "<group>"; };
-		4DB23F031F1E17B700FA6BB6 /* UINavigationController+alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+alpha.m"; sourceTree = "<group>"; };
+		4DB23F021F1E17B700FA6BB6 /* UIViewController+alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+alpha.h"; sourceTree = "<group>"; };
+		4DB23F031F1E17B700FA6BB6 /* UIViewController+alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+alpha.m"; sourceTree = "<group>"; };
 		4DB23F051F1E1BF700FA6BB6 /* FifthAndFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthAndFirstViewController.h; sourceTree = "<group>"; };
 		4DB23F061F1E1BF700FA6BB6 /* FifthAndFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthAndFirstViewController.m; sourceTree = "<group>"; };
 		4DB23F2F1F1F35C200FA6BB6 /* MessageHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageHeadView.xib; sourceTree = "<group>"; };
@@ -223,8 +223,8 @@
 		4DB23EFB1F1E142200FA6BB6 /* category */ = {
 			isa = PBXGroup;
 			children = (
-				4DB23F021F1E17B700FA6BB6 /* UINavigationController+alpha.h */,
-				4DB23F031F1E17B700FA6BB6 /* UINavigationController+alpha.m */,
+				4DB23F021F1E17B700FA6BB6 /* UIViewController+alpha.h */,
+				4DB23F031F1E17B700FA6BB6 /* UIViewController+alpha.m */,
 				4DB23F311F1F376700FA6BB6 /* UIButton+layout.h */,
 				4DB23F321F1F376700FA6BB6 /* UIButton+layout.m */,
 			);
@@ -381,7 +381,7 @@
 				4D1E24DE1F1DB16300020FE0 /* TabBarViewController.m in Sources */,
 				4DB23EE81F1DD80C00FA6BB6 /* FirstTableViewCell.m in Sources */,
 				4DB23EF71F1E04FF00FA6BB6 /* SecondTableViewCell.m in Sources */,
-				4DB23F041F1E17B700FA6BB6 /* UINavigationController+alpha.m in Sources */,
+				4DB23F041F1E17B700FA6BB6 /* UIViewController+alpha.m in Sources */,
 				4D1E24FE1F1DB37900020FE0 /* ThirdViewController.m in Sources */,
 				4D1E24FC1F1DB37900020FE0 /* ForthViewController.m in Sources */,
 				4D1E24FD1F1DB37900020FE0 /* SecondViewController.m in Sources */,

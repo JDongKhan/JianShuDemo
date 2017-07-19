@@ -7,7 +7,7 @@
 //
 
 #import "FifthAndFirstViewController.h"
-#import "UINavigationController+alpha.h"
+#import "UIViewController+alpha.h"
 
 @interface FifthAndFirstViewController ()
 

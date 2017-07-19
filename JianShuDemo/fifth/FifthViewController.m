@@ -11,7 +11,7 @@
 #import "SMBaseTableViewCellStyle.h"
 
 #import <SMTableView/UITableViewCell+simplify.h>
-#import "UINavigationController+alpha.h"
+#import "UIViewController+alpha.h"
 #import "FifthAndFirstViewController.h"
 
 @interface FifthViewController ()<UITableViewDelegate>
